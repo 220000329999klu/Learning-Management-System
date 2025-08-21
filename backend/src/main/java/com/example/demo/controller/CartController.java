@@ -9,6 +9,7 @@ import com.example.demo.service.CartService;
 
 @RestController
 @RequestMapping("/api/carts")
+@CrossOrigin("*")
 public class CartController {
 
     @Autowired

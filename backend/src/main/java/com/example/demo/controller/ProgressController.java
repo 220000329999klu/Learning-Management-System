@@ -9,7 +9,7 @@ import com.example.demo.service.ProgressService;
 
 @RestController
 @RequestMapping("/api/progress")
-@CrossOrigin(allowCredentials = "")
+@CrossOrigin("*")
 public class ProgressController {
 
     @Autowired

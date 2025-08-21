@@ -21,7 +21,7 @@ import com.example.demo.repository.ProgressRepository;
 @Slf4j
 public class AssessmentService {
 
-    private final AssessmentRepository assessmentRepository;
+    private final AssessmentRepository assessmentRepository = null;
     
     public List<Assessment> getAssessmentsByUserAndCourse(User user, Course course) {
         return assessmentRepository.findByUserAndCourse(user, course);

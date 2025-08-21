@@ -17,6 +17,7 @@ import com.example.demo.service.UserService;
 
 @RestController
 @RequestMapping("/api/discussions")
+@CrossOrigin("*")
 public class DiscussionController {
 
     @Autowired

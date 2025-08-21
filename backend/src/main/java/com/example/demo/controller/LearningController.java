@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/learning")
+@CrossOrigin("*")
 public class LearningController {
 
     @Autowired

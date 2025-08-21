@@ -14,6 +14,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/users")
+@CrossOrigin("*")
 public class UserController {
 
     @Autowired
@@ -24,13 +25,14 @@ public class UserController {
         return userService.getAllUsers();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/profile/{id}")
     public User getUserById(@PathVariable Long id) {
         return userService.getUserById(id);
     }
 
     @PostMapping("/add")
     public User createUser(@RequestBody User user) {
+        System.out.println(user);
         return userService.createUser(user);
     }
 

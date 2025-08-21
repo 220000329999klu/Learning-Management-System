@@ -15,6 +15,7 @@ import com.example.demo.repository.QuestionRepository;
 
 @RestController
 @RequestMapping("/api/questions")
+@CrossOrigin("*")
 public class QuestionController {
 
     private final QuestionRepository questionRepository;
